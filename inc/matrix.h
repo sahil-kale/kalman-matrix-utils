@@ -4,6 +4,19 @@
 #include <stdint.h>
 #include "compiler.h"
 
+#ifndef __cplusplus
+// ignore old style function declaration warnings
+#pragma GCC diagnostic ignored "-Wold-style-declaration"
+#endif
+// ignore sign-conversion warnings
+#pragma GCC diagnostic ignored "-Wsign-conversion"
+
+// ignore unused function warnings
+#pragma GCC diagnostic ignored "-Wunused-function"
+// Ignore conversion warnings
+#pragma GCC diagnostic ignored "-Wconversion"
+
+
 /*!
 * \def EXTERN_INLINE_MATRIX Helper inline to switch from local inline to extern inline
 */

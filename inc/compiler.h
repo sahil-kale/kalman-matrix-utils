@@ -43,7 +43,7 @@
 #ifdef _MSC_VER
 #define INLINE
 #else
-#define INLINE
+#define INLINE inline
 #endif
 
 /**
