@@ -2,7 +2,7 @@
 #define CHOLESKY_H_
 
 #include "compiler.h"
-#include "matrix.h"
+#include "matrix_types.h"
 
 /**
 * \brief Decomposes a matrix into lower triangular form using Cholesky decomposition.

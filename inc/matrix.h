@@ -16,6 +16,7 @@
 // Ignore conversion warnings
 #pragma GCC diagnostic ignored "-Wconversion"
 
+#include "matrix_types.h"
 
 /*!
 * \def EXTERN_INLINE_MATRIX Helper inline to switch from local inline to extern inline
@@ -23,31 +24,6 @@
 #ifndef EXTERN_INLINE_MATRIX
 #define EXTERN_INLINE_MATRIX EXTERN_INLINE
 #endif
-
-/**
-* Matrix data type definition.
-*/
-typedef float matrix_data_t;
-
-/**
-* \brief Matrix definition
-*/
-typedef struct {
-    /**
-    * \brief Number of rows
-    */
-    uint_fast8_t rows;
-
-    /**
-    * \brief Number of columns
-    */
-    uint_fast8_t cols;
-
-    /**
-    * \brief Pointer to the data array of size {\see rows} x {\see cols}.
-    */
-    matrix_data_t *data;
-} matrix_t;
 
 /**
 * \brief Initializes a matrix structure.
